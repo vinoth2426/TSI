@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>SpringJDBC</groupId>
+	<artifactId>SpringJDBC</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>SpringJDBC Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<spring.framework>4.3.0.RELEASE</spring.framework>
+		<postgres.version>42.1.4</postgres.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${postgres.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.framework}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.framework}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.framework}</version>
+		</dependency>
+	</dependencies>
+	<build>
+	<plugins>
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.3</version>
+            <configuration>
+                <fork>true</fork>
+                <executable>C:\Program Files\Java\jdk1.8.0_102\bin\javac.exe</executable>
+            </configuration>
+        </plugin>
+    </plugins>
+		<finalName>SpringSecurity</finalName>
+	</build>
+</project>
